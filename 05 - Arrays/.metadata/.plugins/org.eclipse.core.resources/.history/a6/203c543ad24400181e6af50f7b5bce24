@@ -1,0 +1,13 @@
+package exercicio07;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		int[] numeros = new int[7];
+		
+		
+	}
+
+}

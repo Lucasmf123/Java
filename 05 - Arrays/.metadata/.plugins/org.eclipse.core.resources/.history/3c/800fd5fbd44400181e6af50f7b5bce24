@@ -1,0 +1,14 @@
+package exercicio07;
+
+import javax.swing.JOptionPane;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		int tamvetor = Integer.parseInt(JOptionPane.showInputDialog("Informe o número"));
+		
+	}
+	
+}

@@ -1,0 +1,39 @@
+package exercicio01;
+
+import javax.swing.JOptionPane;
+
+public class ex01 {
+
+	public static void main(String[] args) {
+	
+		//Vetor #1
+		int[] primeirosnumeros = new int[10];
+		int[] segundosnumeros = new int[10];
+		int indice = 0;
+		String operacao = null;
+		
+		//Laço
+		while (indice < 10) {
+			primeirosnumeros[indice] = Integer.parseInt(JOptionPane.showInputDialog("Informe os 10 primeiros números"));
+			segundosnumeros[indice] = Integer.parseInt(JOptionPane.showInputDialog("Informe os 10 últimos números"));
+			
+			indice++;
+			
+			operacao = JOptionPane.showInputDialog(null, "Informe a operação");
+			
+		//Criando respostas
+			
+			if (operacao.equals("Soma")) {
+				JOptionPane.showMessageDialog(null, "A soma resulta em: "+(primeirosnumeros[indice]+segundosnumeros[indice]));				
+			}
+			
+		}
+		
+		
+		
+		
+		
+	
+	}
+
+}

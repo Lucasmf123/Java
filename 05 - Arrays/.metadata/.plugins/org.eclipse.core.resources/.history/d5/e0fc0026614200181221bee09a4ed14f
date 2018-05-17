@@ -1,0 +1,23 @@
+package exercicio01;
+
+import javax.swing.JOptionPane;
+
+public class ex01 {
+
+	public static void main(String[] args) {
+	
+		//Vetor #1
+		int[] primeirosnumeros = new int[10];
+		int[] segundosnumeros = new int[10];
+		int indice = 0;
+		String operacao = null;
+		
+		//Adicionando dados ao vetor
+		primeirosnumeros = Integer.parseInt(JOptionPane.showInputDialog("Informe os 10 primeiros números"));
+		
+		
+		
+	
+	}
+
+}

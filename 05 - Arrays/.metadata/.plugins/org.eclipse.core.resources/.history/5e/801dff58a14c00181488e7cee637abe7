@@ -1,0 +1,40 @@
+package exercicio05;
+
+import javax.swing.JOptionPane;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+
+		// Vetores
+		String[][] dados = new String[20][6];
+
+		int normal = 0;
+		int abaixo = 0;
+		int sobrepeso = 0;
+		String texto = "";
+		int continuar = 0;
+		int indice = 0;
+
+		// Laço
+
+
+				do {
+
+					dados[indice][0] = JOptionPane.showInputDialog("Informe o Nome");
+					dados[indice][1] = JOptionPane.showInputDialog("Informe o Sexo");
+					dados[indice][2] = Double
+							.parseDouble(JOptionPane.showInputDialog("Informe a altura separando-a com : (.)"));
+					peso[indice][3] = Double
+							.parseDouble(JOptionPane.showInputDialog("Informe o peso separando-o com : (.)"));
+					imc[indice][4] = (peso[indice][3] / (altura[indice][2] * altura[indice][2]));
+					
+					indice++;
+					continuar = JOptionPane.showConfirmDialog(null, "Continuar?");
+
+				}while(continuar == 0);
+
+		
+	}
+
+}

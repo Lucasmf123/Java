@@ -1,0 +1,53 @@
+import javax.swing.JOptionPane;
+public class Ex07 {
+ public static void main(String[] args){
+int TAMVET = Integer.parseInt(JOptionPane.showInputDialog("Porfavor, Informe o Tamanho do Vetor")); //Foi colocado para o usuario digitar o tamanho do VETOR( isto para vcs fazerem testes, pra ficar mais agilizado
+int numero[] = new int[TAMVET]; // o tamanho informado será armazenado na array "numero"
+String m = ""; //isto servira como um System.out.println, já que estamos utilizando interface gráfica
+boolean verificador = false; //um simples operador de decisão para o Bubble sort e para mostrar se há ou nao valores repetidos no vetor
+boolean repetiu = false; // ele será para verficar se repetiu ou nao o numero no vetor...mas devem estar se perguntando porque nao utilizei o boolean acima(verificador),Simples a variavel só poderá realizar a sua designação, se utilizar a mesma variavel para fazer varios tipos de decisões que nao tem nada a ver com o motivo na qual ela foi criada, o programa não estará seguindo a convenção de código
+
+//Este Ciclo for será para armazenar valores no vetor "numero"
+for(int i = 0; i < TAMVET; i++){
+  int x = Integer.parseInt(JOptionPane.showInputDialog("Digite o Numero da " +(i)+ "º Posição do Vetor"));// utilizamos a variavel de escopo temporaria x para receber o valor informado pelo usuario
+  numero[i] = x;
+}
+
+/*
+ * Este while(abaixo) fará oque nós programadores conhecemos como Bubble sort, ele téra como funcionalidade, organizar o vetor do menor numero ao maior por exemplo
+ * Se no vetor foi armazenado assim(supondo que seja 3 numeros): [5,8,0,2]
+ * o Bubble sort irá organizar desta forma [0,2,5,8].
+ * Mas porque foi utilizado o Bubble sort?
+ * R: Relativamente Simples(relativamente *-*),existem varias formas de se resolver o problema proposto por este exercicio,mas a forma que utilizei irá fazer
+ * com que ele olhe na posição seguinte e veja se ela é ou nao parecida e se nao for pula pra proxima linha do vetor e assim se nao utilizar o Bubble sort irá
+ * sempre dar um monte de numeros nada a ver com oque foi digitado.
+ */
+while(!verificador){ //se verificador for diferente de true entao ele entrano ciclo, lembrando oque foi feito nesta linha é um resumo de while(verificador != true){
+  verificador = true; //o verficador é atribuido verdadeiro
+  for(int i=0; i<TAMVET-1; i++){ //até aqui tudo bem só uma estrutura para percorrer o vetor
+	if(numero[i] > numero[i+1]){ //se o numero, for maior que o, numero uma posição a frente, então ele entra no ciclo
+	  verificador = false; // e o verificador é atribuido o valor de falso
+	  int x = numero[i+1];// a variavel de escopo temporaria o "x" para armazenar o valor de numero na posição +1(a frente) do ciclo for(o i)
+	  numero[i +1]= numero[i]; // o valor de numero na posição +1(a frente) do ciclo for(o i) irá receber o numero na posição do ciclo sem nehuma modificação
+	  numero[i] = x; // e assim o numero do ciclo sem modificação irá receber o valor de x
+	} //fechamos o if
+  } // fechamos o for
+} //por fim, fechamos o while
+
+/*
+ * Ahá, Agora vem a parte sistematica do programa aonde nós realmente iremos resolver o problema do exercicio proposto:
+ * no final irei explicar oque foi feito para descobrir qual os valores que foram repetidos, não explicarei agora porque explicar sem ver é complicado
+ */
+m+=("-----------~~'OS Valores Repetidos'~~-------------- \n"); // a varivel m fará um papel parecido do System.out.println aonde mostrar em uma janela a mensagem que foi informada
+for(int i=0;i<TAMVET-1;i++){
+  for(int j = i+1; j <TAMVET;j++){
+	if (numero[j] == numero[i]) {
+	  repetiu = true;
+	  m+=("O elemento" +numero[j] + "se repete \n");
+	}
+  }
+}
+if(!repetiu){m+=(" ~~'Nenhum Elemento Foi Repetido'~~");}
+JOptionPane.showMessageDialog(null,m);
+ }
+}

@@ -1,0 +1,57 @@
+package exercicio06;
+
+import javax.swing.JOptionPane;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		// Variáveis
+		String[][] dados = new String[3][3];
+		dados[0][0] = "1";
+		dados[0][1] = "1";
+		dados[0][2] = "1";
+		dados[1][0] = "1";
+		dados[1][1] = "1";
+		dados[1][2] = "1";
+		dados[2][0] = "1";
+		dados[2][1] = "1";
+		dados[2][2] = "1";
+		String texto = "";
+		String j1 = "";
+		String j2 = "";
+		
+		
+		//Obtendo X e O
+		j1 = JOptionPane.showInputDialog("Informe Que jogador você é. O Jogador 1 será X.");
+		
+		if(j1 == "Jogador 1") {
+			j1 = "X";
+		}else {
+			j1 = "X";
+			j2 = "O";
+		}
+		
+		
+		// Laço
+		for (int l = 0; l < 3; l++) {
+			
+			for (int c = 0; c < 3; c++) {
+							
+				
+			}
+		}
+		
+		for(int linha = 0; linha < 3; linha++) {
+			
+			for(int coluna = 0; coluna < 3; coluna++) {
+				
+				JOptionPane.showMessageDialog(null, dados[linha][coluna]+"\n"+j1+"\n"+j2);
+			}
+			
+		}
+		
+		
+	}
+
+}

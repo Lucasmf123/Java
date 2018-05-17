@@ -1,0 +1,18 @@
+package exercicio06;
+
+public class Ex6Teste {
+
+	public static void main(String[] args) {
+		
+		//Matriz
+		String[][] estrutura = new String[3][3];
+		
+		//Laço
+		do {
+			
+		}while();
+		
+		
+	}
+	
+}

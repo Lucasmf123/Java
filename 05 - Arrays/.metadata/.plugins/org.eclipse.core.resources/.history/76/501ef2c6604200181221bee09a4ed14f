@@ -1,0 +1,14 @@
+package exercicio01;
+
+public class ex01 {
+
+	public static void main(String[] args) {
+	
+		//Vetor #1
+		int primeirosnumeros = 0;
+		int segundosnumeros = 0;
+		
+	
+	}
+
+}

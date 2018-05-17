@@ -1,0 +1,22 @@
+package exerciciobonus;
+
+import java.util.Random;
+
+public class ExBônus {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		int[] dados = new int[5];
+		Random r = new Random();
+				
+		//Laço
+		for(int indice = 0; indice <4; indice++) {
+			dados[indice] = (r.nextInt(21));
+		}
+
+		System.out.println(dados[0]);
+		
+	}
+
+}

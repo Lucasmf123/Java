@@ -1,0 +1,31 @@
+package exerciciobonus;
+
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+public class ExBônus {
+
+	public static void main(String[] args) {
+
+		// Vetores
+		int[] dados = new int[5];
+		Random a = new Random();
+		Random b = new Random();
+		Random c = new Random();
+		Random d = new Random();
+		Random e = new Random();
+		int numero = 0;
+		
+		// Laço
+		for(int indice = 0; indice <5; indice++) {
+			dados[0] = (a.nextInt(21));
+			dados[1] = (b.nextInt(21));
+			dados[2] = (c.nextInt(21));
+			dados[3] = (d.nextInt(21));
+			dados[4] = (e.nextInt(21));
+		}
+		
+	}
+
+}

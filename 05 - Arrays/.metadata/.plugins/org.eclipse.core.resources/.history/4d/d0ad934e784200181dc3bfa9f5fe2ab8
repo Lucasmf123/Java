@@ -1,0 +1,36 @@
+package exercicio04;
+
+import javax.swing.JOptionPane;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		String nome = null;
+		int correto = 0;
+		int incorreto = 0;
+		String questao1 = null;
+		
+		nome = JOptionPane.showInputDialog("Informe o nome ou SAIR para finalizar");
+		
+		//Laço
+		while (!nome.equals("SAIR")) {
+			
+			questao1 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+		JOptionPane.showMessageDialog(null, incorreto);
+			
+			
+			
+			
+		}
+		
+	}
+}

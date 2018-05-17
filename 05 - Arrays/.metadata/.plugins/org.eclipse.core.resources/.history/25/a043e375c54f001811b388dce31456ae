@@ -1,0 +1,122 @@
+package exercicio06;
+
+import javax.swing.JOptionPane;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		// Variáveis
+		String[][] dados = new String[3][3];
+		dados[0][0] = "1 ";
+		dados[0][1] = "2 ";
+		dados[0][2] = "3 ";
+		dados[1][0] = "4 ";
+		dados[1][1] = "5 ";
+		dados[1][2] = "6 ";
+		dados[2][0] = "7 ";
+		dados[2][1] = "8 ";
+		dados[2][2] = "9 ";
+		String texto = "";
+		String j1 = "";
+		String j2 = "";
+		int posicao = 0;
+		int contador = 0;
+		boolean valida = false;
+
+		// Obtendo X e O
+		j1 = JOptionPane.showInputDialog("Informe Que jogador você é. X ou O?.");
+
+		if (j1 == "X") {
+			j1 = "X";
+			j2 = "O";
+			valida = true;
+			
+		} else {
+			j1 = "O";
+			j2 = "X";
+			valida = true;
+		}
+
+		// Laço
+		while (valida == true) {
+
+			if(contador % 2 == 0){
+	            contador++;
+	        }else{
+	        	contador--;
+	        }
+			
+			for (int l = 0; l < 3; l++) {
+
+				for (int c = 0; c < 3; c++) {
+
+					posicao = Integer.parseInt(
+							JOptionPane.showInputDialog(dados[l][c] + "Informe o número da posição desejada."));
+
+					if (posicao == 1) {
+						dados[0][0] = j1;
+					}else {
+						dados[0][0] = j2;
+					}
+					if (posicao == 2) {
+						dados[0][1] = j1;
+					}else {
+						dados[0][1] = j2;
+					}
+					if (posicao == 3) {
+						dados[0][2] = j1;
+					}else {
+						dados[0][2] = j2;
+					}
+					if (posicao == 4) {
+						dados[1][0] = j1;
+					}else {
+						dados[1][0] = j2;
+					}
+					if (posicao == 5) {
+						dados[1][1] = j1;
+					}else {
+						dados[1][1] = j2;
+					}
+					if (posicao == 6) {
+						dados[1][2] = j1;
+					}else {
+						dados[1][2] = j2;
+					}
+					if (posicao == 7) {
+						dados[2][0] = j1;
+					}else {
+						dados[2][0] = j2;
+					}
+					if (posicao == 8) {
+						dados[2][1] = j1;
+					}else {
+						dados[2][1] = j2;
+					}
+					if (posicao == 9) {
+						dados[2][2] = j1;
+					}else {
+						dados[2][2] = j2;
+					}
+				}
+			}
+		}
+
+		
+		
+		//Exibir 
+		for (int linha = 0; linha < 3; linha++) {
+
+			for (int coluna = 0; coluna < 3; coluna++) {
+
+				texto += dados[linha][coluna];
+
+			}
+
+		}
+
+		JOptionPane.showMessageDialog(null, texto + "\n" + j1 + "\n" + j2);
+	}
+
+}

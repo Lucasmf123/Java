@@ -1,0 +1,116 @@
+package exercicio04;
+
+import javax.swing.JOptionPane;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		String nome = null;
+		int correto = 0;
+		int incorreto = 0;
+		String questao1 = null;
+		String questao2 = null;
+		String questao3 = null;
+		String questao4 = null;
+		String questao5 = null;
+		String questao6 = null;
+		String questao7 = null;
+		String questao8 = null;
+		String questao9 = null;
+		String questao10 = null;
+		
+		
+		nome = JOptionPane.showInputDialog("Informe o nome ou SAIR para finalizar");
+		
+		//Laço
+		while (!nome.equals("SAIR")) {
+			
+			questao1 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao2 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao3 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao4 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao5 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao6 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao7 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao8 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao9 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				questao10 = JOptionPane.showInputDialog(null, "Qual o principal ponto turístico da Cidade do Rio de Janeiro?\nA) Pão de Açúcar\nB) Cristo Redentor\nC) Gaspar\nD) Sua casa");
+				if(questao1.equals("B")){
+					correto++;					
+				}
+				if((questao1.equals("A")) || (questao1.equals("C")) || (questao1.equals("D"))) {
+					incorreto++;
+				}
+				
+				nome = JOptionPane.showInputDialog("Informe o nome ou SAIR para finalizar");
+				
+				
+		}
+		
+	}
+}

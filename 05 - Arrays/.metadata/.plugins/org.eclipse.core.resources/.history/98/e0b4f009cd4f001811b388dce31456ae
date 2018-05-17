@@ -1,0 +1,12 @@
+package exercicio11;
+
+public class Ex11 {
+
+	public static void main(String[] args) {
+		
+		//Variaveis
+		int[][] dados = new int[6][6]
+
+	}
+
+}

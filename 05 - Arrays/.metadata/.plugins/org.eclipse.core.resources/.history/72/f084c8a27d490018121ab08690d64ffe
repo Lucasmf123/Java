@@ -1,0 +1,42 @@
+package exercicio01;
+
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+
+		// Matriz
+		int[][] dados = new int[5][6];
+		
+		Random gerar = new Random();
+
+		// Laço
+		for (int linha = 0; linha < 5; linha++) {
+
+			for (int coluna = 0; coluna < 6; coluna++) {
+
+				dados[linha][coluna] = gerar.nextInt(10);
+
+			}
+
+		}
+
+		// Exibir números
+		String texto = "Matriz:\n\n";
+		for (int linha = 0; linha < 5; linha++) {
+
+			for (int coluna = 0; coluna < 6; coluna++) {
+
+				texto += "| "+ dados[linha][coluna]+" |";
+
+			}
+
+		}
+		
+		JOptionPane.showMessageDialog(null, texto);
+	}
+
+}

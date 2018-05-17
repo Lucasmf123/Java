@@ -1,0 +1,61 @@
+package exercicio06;
+
+import javax.swing.JOptionPane;
+
+public class Ex6Teste {
+
+	public static void main(String[] args) {
+		
+		//Contador
+		int contador = 0;
+		
+		//Jogadores
+		String j1, j2;
+		
+		//Matriz
+		String[][] estrutura = new String[3][3];
+		estrutura[0][0] = "1";
+		estrutura[0][1] = "2";
+		estrutura[0][2] = "3";
+		estrutura[1][0] = "4";
+		estrutura[1][1] = "5";
+		estrutura[1][2] = "6";
+		estrutura[2][0] = "7";
+		estrutura[2][1] = "8";
+		estrutura[2][2] = "9";
+		
+		//Finalizar jogo
+		boolean sair = false;
+		
+		//Obter a posição
+		int posicao;
+		
+		//Verificar quem começa
+		int comecar = JOptionPane.showConfirmDialog(null, "Deseja começar?");
+		if(comecar == 1) {
+			j1 = "X";
+			j2 = "O";
+		}else {
+			j1 = "O";
+			j2 = "X";
+		}
+		
+		
+		//Laço
+		do {
+			
+			//Pedir o local para add o símbolo
+			if(contador % 2 == 0) {
+				posicao = Integer.parseInt(JOptionPane.showInputDialog("Informe a posição para o X"));
+			}else{
+				posicao = Integer.parseInt(JOptionPane.showInputDialog("Informe a posição para o O"));
+			}
+				
+				
+			
+		}while(sair != true);
+		
+		
+	}
+	
+}

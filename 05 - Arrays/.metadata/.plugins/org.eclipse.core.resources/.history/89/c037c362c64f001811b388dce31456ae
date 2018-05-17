@@ -1,0 +1,27 @@
+package exercicio06;
+
+public class Ex6Teste {
+
+	public static void main(String[] args) {
+		
+		//Matriz
+		String[][] estrutura = new String[3][3];
+		estrutura[0][0] = "1";
+		estrutura[0][1] = "2";
+		estrutura[0][2] = "3";
+		estrutura[1][0] = "4";
+		estrutura[1][1] = "5";
+		estrutura[1][2] = "6";
+		estrutura[2][0] = "7";
+		estrutura[2][1] = "8";
+		estrutura[2][2] = "9";
+		
+		//Laço
+		do {
+			
+		}while();
+		
+		
+	}
+	
+}

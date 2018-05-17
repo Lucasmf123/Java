@@ -1,0 +1,13 @@
+package exercicio06;
+
+public class Ex06 {
+	
+	public static void main(String[] args) {
+		
+		//Variáveis
+		String[][] dados = new String[6][6];
+		
+		
+	}
+
+}

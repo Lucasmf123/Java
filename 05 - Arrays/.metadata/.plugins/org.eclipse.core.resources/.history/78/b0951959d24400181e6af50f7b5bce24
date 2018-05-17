@@ -1,0 +1,17 @@
+package exercicio07;
+
+import javax.swing.JOptionPane;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		
+		//Vetores
+		int[] numeros = new int[7];
+		
+		//Adicionar dados ao vetor
+		numeros[0] = JOptionPane.showInputDialog("Informe os números");
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package exercicio04;
+
+import javax.swing.JOptionPane;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+
+		//Vetores
+		int[] numeros = new int[5];
+		boolean valida = false;
+		int indice = 0;
+		
+		//Laço
+		while(indice <5){
+			
+			numeros[indice] = Integer.parseInt(JOptionPane.showInputDialog("Informe os 5 números"));
+			indice++;
+			
+		}
+		
+		indice =0;
+		while(indice <5){
+			if(numeros[indice] == 10){
+				System.out.println("O número 10 está no "+indice);
+			}
+		}
+	}
+
+}
