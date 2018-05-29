@@ -32,8 +32,7 @@ public class FormularioPrincipal {
 		JButton btnHistorico = new JButton("Historico");
 		JButton btnEstatisticas = new JButton("Estatísticas");
 		JButton btnSair = new JButton("Sair");
-		
-		
+
 		lblNomeProduto.setBounds(80, 10, 120, 20);
 		lblValorProduto.setBounds(80, 40, 120, 20);
 		txtNomeProduto.setBounds(220, 10, 200, 20);
@@ -43,7 +42,6 @@ public class FormularioPrincipal {
 		btnHistorico.setBounds(100, 210, 100, 30);
 		btnEstatisticas.setBounds(300, 210, 100, 30);
 		btnSair.setBounds(200, 160, 100, 30);
-		
 
 		// Instanciar um objeto da classe Ação
 		Acao a = new Acao();
@@ -58,31 +56,43 @@ public class FormularioPrincipal {
 				String nomedoProduto = txtNomeProduto.getText();
 				double valordoProduto = Double.parseDouble(txtValorProduto.getText());
 
-				//Criar e chamar
+				// Criar e chamar
 				a.cadastrar(nomedoProduto, valordoProduto);
-				
+
 				// Limpar campos
 				txtNomeProduto.setText("");
 				txtValorProduto.setText("");
 
 				// Cursor no campo nome
 				txtNomeProduto.requestFocus();
-				
+
 			}
 		});
-		
-		//Ação do btnNext
+
+		// Ação do btnNext
 		btnNext.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+
 				// Criar formulário
 				FormularioRegistroPedido frp = new FormularioRegistroPedido();
 
 				// Fechar o FormulárioPrincipal
 				formulario.dispose();
-				
+
+			}
+		});
+
+		// Ação do btnSair
+		btnSair.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+				// Fechar o FormulárioPrincipal
+				formulario.dispose();
+
 			}
 		});
 

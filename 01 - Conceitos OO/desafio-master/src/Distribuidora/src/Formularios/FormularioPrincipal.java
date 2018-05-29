@@ -14,6 +14,9 @@ import javax.swing.JSplitPane;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
+
+import Formularios.FormularioCadastro;
+
 import javax.swing.JProgressBar;
 import javax.swing.JToggleButton;
 import java.awt.Window.Type;
@@ -24,6 +27,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPasswordField;
 import java.awt.SystemColor;
 import javax.swing.SwingConstants;
+import java.awt.Toolkit;
 
 public class FormularioPrincipal extends JFrame {
 
@@ -51,6 +55,7 @@ public class FormularioPrincipal extends JFrame {
 	 * Create the frame.
 	 */
 	public FormularioPrincipal() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\104952\\Downloads\\if_ic_settings_system_daydream_48px_352110.png"));
 		setBackground(Color.RED);
 		setTitle("Teste");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -105,6 +110,14 @@ public class FormularioPrincipal extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
+				// Obter os dados
+				String nomeProduto = "";
+				double valorProduto = 0;
+				int quantidadeProduto = 0;
+				
+				// Criar o novo formulário
+				FormularioCadastro f = new FormularioCadastro(nomeProduto, valorProduto, quantidadeProduto);
+				
 			}
 		});
 
